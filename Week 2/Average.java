@@ -1,3 +1,4 @@
+/* A program (Average.java) that accepts three integers and outputs their average value. */
 import java.util.Scanner;
 public class Average {
 

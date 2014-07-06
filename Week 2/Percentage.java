@@ -1,3 +1,4 @@
+/* A program (Percentage.java) that accepts two integers and outputs the first as a percentage of the second.*/
 import java.util.Scanner;
 public class Percentage {
 

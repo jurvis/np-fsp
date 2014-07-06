@@ -1,3 +1,8 @@
+/* Produce the output as follows:
+My name is <your name>.
+I like FSP!
+I will sail through FSP!
+*/
 // this is my second Java Program
 public class My2ndJavaProgram {
 

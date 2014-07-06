@@ -1,3 +1,4 @@
+/* Rewrite My3rdJavaProgram as My4thJavaProgram using just 1 variable, message. */
 // this is my fourth Java Program
 public class My4thJavaProgram {
 
