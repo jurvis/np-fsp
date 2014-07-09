@@ -4,7 +4,7 @@ public class Chap6Q4 {
 		// display a list first
 		displayList();
 		// add a checker so we can loop over with a while loop if item code is invalid
-		Boolean checker = false;
+		boolean checker = false;
 
 		while (checker == false) {
 			// declares variables and Scanner object
