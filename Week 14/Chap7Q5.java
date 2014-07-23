@@ -21,7 +21,25 @@ public class Chap7Q5 {
 		}
 	}
 
-	//find person with mark range
+	//Display the main menu
+	public static int displayMenu() {
+		Scanner receiver = new Scanner(System.in);
+		System.out.println("Main Menu");
+		System.out.println("1) Display student names and marks");
+		System.out.println("2) Calculate and display the average mark");
+		System.out.println("3) Display students with marks above the average marks");
+		System.out.println("4) Display students with grade");
+		System.out.println("5) Display student with the lowest mark");
+		System.out.println("6) Display students with given mark range");
+		System.out.println("0) Exit");
+
+		System.out.print("Enter your option: ");
+		int input = receiver.nextInt();
+
+		return input;
+	}
+
+		//find person with mark range
 	public static void displayStudentDetailsWithMarkRange(int[] markArr, String[] nameArr) {
 		int lower = getLowerMark();
 		int upper = getUpperMark();
@@ -61,24 +79,6 @@ public class Chap7Q5 {
 			}
 		}
 		System.out.printf("The student with the lowest mark %d is %s\n", minValue, name);
-	}
-
-	//Display the main menu
-	public static int displayMenu() {
-		Scanner receiver = new Scanner(System.in);
-		System.out.println("Main Menu");
-		System.out.println("1) Display student names and marks");
-		System.out.println("2) Calculate and display the average mark");
-		System.out.println("3) Display students with marks above the average marks");
-		System.out.println("4) Display students with grade");
-		System.out.println("5) Display student with the lowest mark");
-		System.out.println("6) Display students with given mark range");
-		System.out.println("0) Exit");
-
-		System.out.print("Enter your option: ");
-		int input = receiver.nextInt();
-
-		return input;
 	}
 
 	//Display Students Details With Grade

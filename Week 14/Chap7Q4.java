@@ -19,22 +19,6 @@ public class Chap7Q4 {
 		}
 	}
 
-	//Find person with lowest mark
-	public static void findLowestMark(int[] markArr, String[] nameArr) {
-		//initialize an initial minimum value and name of person.
-		int minValue = markArr[0];
-		String name = nameArr[0];
-		// reiterate through the mark array to attempt to find a smaller value
-		for (int i = 1; i < markArr.length; i++) {
-			//if found, change minValue and get name at the same index in nameArr
-			if (markArr[i] < minValue) {
-				minValue = markArr[i];
-				name = nameArr[i];
-			}
-		}
-		System.out.printf("The student with the lowest mark %d is %s\n", minValue, name);
-	}
-
 	//Display the main menu
 	public static int displayMenu() {
 		Scanner receiver = new Scanner(System.in);
@@ -50,6 +34,22 @@ public class Chap7Q4 {
 		int input = receiver.nextInt();
 
 		return input;
+	}
+
+	//Find person with lowest mark
+	public static void findLowestMark(int[] markArr, String[] nameArr) {
+		//initialize an initial minimum value and name of person.
+		int minValue = markArr[0];
+		String name = nameArr[0];
+		// reiterate through the mark array to attempt to find a smaller value
+		for (int i = 1; i < markArr.length; i++) {
+			//if found, change minValue and get name at the same index in nameArr
+			if (markArr[i] < minValue) {
+				minValue = markArr[i];
+				name = nameArr[i];
+			}
+		}
+		System.out.printf("The student with the lowest mark %d is %s\n", minValue, name);
 	}
 
 	//Display Students Details With Grade
